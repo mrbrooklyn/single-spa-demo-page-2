@@ -1,5 +1,5 @@
 language: node_js
-node_js:
+node_js: 16
   - node
 env:
   global:
@@ -16,10 +16,10 @@ script:
   - mv dist/*.* dist/@thawkin3/single-spa-demo-page-2/$TRAVIS_COMMIT/
 deploy:
   provider: s3
-  access_key_id: "$AWS_ACCESS_KEY_ID"
-  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
-  bucket: "single-spa-demo"
-  region: "us-west-2"
+  access_key_id: "AKIAYCT2D5S5NPD4MMUO"
+  secret_access_key: "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"
+  bucket: "single-spa-demo-test"
+  region: "ap-southeast-1"
   cache-control: "max-age=31536000"
   acl: "public_read"
   local_dir: dist
